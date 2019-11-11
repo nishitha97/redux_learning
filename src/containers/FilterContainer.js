@@ -17,13 +17,7 @@ class FilterContainer extends Component {
         )
     }
 }
-const mapStateToProps = (state) => {
-    console.log(state.todos);
-    return {
-        todos:state.todos,
-        visibilityFilter:state.visibilityFilter
-    }
-};
+
 //dispatch an action and update state in the store
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -31,4 +25,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(FilterContainer);
+export default connect(null,mapDispatchToProps)(FilterContainer);
