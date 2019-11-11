@@ -49,9 +49,9 @@ class AddTodo extends Component {
 
 //get state from store and set as a  prop
 const mapStateToProps = (state) => {
-    console.log("ddddddddddddddddddddddddddddddddddddddddddd");
-    console.log(state);
-    console.log(state.todos.text);
+    // console.log("ddddddddddddddddddddddddddddddddddddddddddd");
+    // console.log(state);
+    // console.log(state.todos.text);
     return {
        text:state.todos.text
     }
