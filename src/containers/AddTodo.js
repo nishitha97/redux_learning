@@ -57,6 +57,7 @@ const mapStateToProps = (state) => {
     }
 };
 //dispatch an action and update state in the store
+//set an action as a prop so that it can be dispatched an update the state in the store
 const mapDispatchToProps = (dispatch) => {
     return {
         actions: bindActionCreators(indexActions, dispatch)
